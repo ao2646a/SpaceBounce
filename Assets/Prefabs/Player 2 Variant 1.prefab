@@ -21,7 +21,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6581595757855131056, guid: c5b0363b4dbd9e8458dfd163d3ce241f, type: 3}
       propertyPath: m_ActionEvents.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6581595757855131056, guid: c5b0363b4dbd9e8458dfd163d3ce241f, type: 3}
       propertyPath: m_ActionEvents.Array.data[0].m_ActionId
@@ -32,12 +32,20 @@ PrefabInstance:
       value: d573dbae-dff0-499e-905b-0bf1a47ab3b0
       objectReference: {fileID: 0}
     - target: {fileID: 6581595757855131056, guid: c5b0363b4dbd9e8458dfd163d3ce241f, type: 3}
+      propertyPath: m_ActionEvents.Array.data[2].m_ActionId
+      value: 210cb785-3cdd-47be-b5f3-cb65e1b0a46b
+      objectReference: {fileID: 0}
+    - target: {fileID: 6581595757855131056, guid: c5b0363b4dbd9e8458dfd163d3ce241f, type: 3}
       propertyPath: m_ActionEvents.Array.data[0].m_ActionName
       value: Player/Move[/Keyboard/a,/Keyboard/d]
       objectReference: {fileID: 0}
     - target: {fileID: 6581595757855131056, guid: c5b0363b4dbd9e8458dfd163d3ce241f, type: 3}
       propertyPath: m_ActionEvents.Array.data[1].m_ActionName
       value: Player/Jump[/Keyboard/w]
+      objectReference: {fileID: 0}
+    - target: {fileID: 6581595757855131056, guid: c5b0363b4dbd9e8458dfd163d3ce241f, type: 3}
+      propertyPath: m_ActionEvents.Array.data[2].m_ActionName
+      value: Player/Shoot[/Keyboard/leftShift]
       objectReference: {fileID: 0}
     - target: {fileID: 6581595757855131056, guid: c5b0363b4dbd9e8458dfd163d3ce241f, type: 3}
       propertyPath: m_ActionEvents.Array.data[0].m_PersistentCalls.m_Calls.Array.size
@@ -156,9 +164,21 @@ PrefabInstance:
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 6581595757855131057, guid: c5b0363b4dbd9e8458dfd163d3ce241f, type: 3}
-      propertyPath: pushBackForce
-      value: 8
-      objectReference: {fileID: 0}
+      propertyPath: leftfRay
+      value: 
+      objectReference: {fileID: 401558858122846847, guid: 77b0faad9e80ada4b93177764e71e681, type: 3}
+    - target: {fileID: 6581595757855131057, guid: c5b0363b4dbd9e8458dfd163d3ce241f, type: 3}
+      propertyPath: leftpRay
+      value: 
+      objectReference: {fileID: 401558858122846847, guid: 77b0faad9e80ada4b93177764e71e681, type: 3}
+    - target: {fileID: 6581595757855131057, guid: c5b0363b4dbd9e8458dfd163d3ce241f, type: 3}
+      propertyPath: rightfRay
+      value: 
+      objectReference: {fileID: 401558858122846847, guid: 77b0faad9e80ada4b93177764e71e681, type: 3}
+    - target: {fileID: 6581595757855131057, guid: c5b0363b4dbd9e8458dfd163d3ce241f, type: 3}
+      propertyPath: rightpRay
+      value: 
+      objectReference: {fileID: 401558858122846847, guid: 77b0faad9e80ada4b93177764e71e681, type: 3}
     - target: {fileID: 6581595757855131061, guid: c5b0363b4dbd9e8458dfd163d3ce241f, type: 3}
       propertyPath: m_Sprite
       value: 
