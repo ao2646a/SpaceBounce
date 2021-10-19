@@ -155,6 +155,10 @@ PrefabInstance:
       propertyPath: m_ActionEvents.Array.data[13].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 6581595757855131057, guid: c5b0363b4dbd9e8458dfd163d3ce241f, type: 3}
+      propertyPath: pushBackForce
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 6581595757855131061, guid: c5b0363b4dbd9e8458dfd163d3ce241f, type: 3}
       propertyPath: m_Sprite
       value: 

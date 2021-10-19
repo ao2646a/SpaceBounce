@@ -11,6 +11,7 @@ public class SlimeBehavior : MonoBehaviour
     {
         boingSource = GetComponent<AudioSource>();
     }
+
     void OnCollisionEnter2D(Collision2D col)
     {
         if (col.collider.CompareTag("Player"))

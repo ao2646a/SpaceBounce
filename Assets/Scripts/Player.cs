@@ -15,7 +15,7 @@ public class Player : MonoBehaviour
     public float lastJumpTime;
     public bool grounded;
 
-    public float pushBackForce = 2;
+    public float pushBackForce = 8;
 
 
     public AudioSource bounceSource;
@@ -56,6 +56,7 @@ public class Player : MonoBehaviour
         return raycastHit.collider != null;
     }
 
+
     public void Pushback(Vector2 force)
     {
         rb.velocity = force;
@@ -63,4 +64,6 @@ public class Player : MonoBehaviour
         grounded = false;
     }
 
+
 }
+

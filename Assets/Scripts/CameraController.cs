@@ -30,7 +30,7 @@ public class CameraController : MonoBehaviour
             transform.position = newPos;
         }
 
-        else //if (screenShakeTimer == 0)
+        else 
         {
             transform.position = new Vector3(0f, 0f, -10f);
         }
