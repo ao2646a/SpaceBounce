@@ -26,7 +26,7 @@ public class Player : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         bc = GetComponent<BoxCollider2D>();
         bounceSource = GetComponent<AudioSource>();
-   
+
     }
 
     // Update is called once per frame
@@ -42,7 +42,7 @@ public class Player : MonoBehaviour
 
     public void Jump(InputAction.CallbackContext context)
     {
-        if(context.performed && IsGrounded())
+        if (context.performed && IsGrounded())
         {
             bounceSource.Play();
             rb.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
@@ -63,6 +63,4 @@ public class Player : MonoBehaviour
         grounded = false;
     }
 
-
-
-    }
+}

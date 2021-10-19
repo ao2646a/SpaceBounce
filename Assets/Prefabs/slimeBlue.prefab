@@ -173,6 +173,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pushBackForce: 8
+  boingSource: {fileID: 0}
 --- !u!82 &4176836039488466697
 AudioSource:
   m_ObjectHideFlags: 0
