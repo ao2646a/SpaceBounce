@@ -205,7 +205,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6581595757855131056, guid: c5b0363b4dbd9e8458dfd163d3ce241f, type: 3}
       propertyPath: m_ActionEvents.Array.size
-      value: 12
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 6581595757855131057, guid: c5b0363b4dbd9e8458dfd163d3ce241f, type: 3}
       propertyPath: bounce
@@ -216,9 +216,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: d50424293d9db411e8d0e987c1e0b644, type: 3}
     - target: {fileID: 6581595757855131057, guid: c5b0363b4dbd9e8458dfd163d3ce241f, type: 3}
-      propertyPath: pushBackForce
-      value: 8
-      objectReference: {fileID: 0}
+      propertyPath: leftfRay
+      value: 
+      objectReference: {fileID: 401558858122846847, guid: 77b0faad9e80ada4b93177764e71e681, type: 3}
+    - target: {fileID: 6581595757855131057, guid: c5b0363b4dbd9e8458dfd163d3ce241f, type: 3}
+      propertyPath: leftpRay
+      value: 
+      objectReference: {fileID: 401558858122846847, guid: 77b0faad9e80ada4b93177764e71e681, type: 3}
+    - target: {fileID: 6581595757855131057, guid: c5b0363b4dbd9e8458dfd163d3ce241f, type: 3}
+      propertyPath: rightfRay
+      value: 
+      objectReference: {fileID: 401558858122846847, guid: 77b0faad9e80ada4b93177764e71e681, type: 3}
+    - target: {fileID: 6581595757855131057, guid: c5b0363b4dbd9e8458dfd163d3ce241f, type: 3}
+      propertyPath: rightpRay
+      value: 
+      objectReference: {fileID: 401558858122846847, guid: 77b0faad9e80ada4b93177764e71e681, type: 3}
     - target: {fileID: 6581595757855131062, guid: c5b0363b4dbd9e8458dfd163d3ce241f, type: 3}
       propertyPath: m_RootOrder
       value: 0
