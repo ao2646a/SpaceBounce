@@ -27,11 +27,12 @@ public class CameraController : MonoBehaviour
         {
             newPos += Random.onUnitSphere * screenShakeStrength;
             screenShakeTimer -= Time.deltaTime;
-            
+            transform.position = newPos;
+            newPos = new Vector3(0f, 0f, -10f);
+
         }
 
-        transform.position = newPos;
-        newPos = new Vector3(0f, 0f, -10f);
+
 
     }
 
