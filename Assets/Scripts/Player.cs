@@ -27,6 +27,7 @@ public class Player : MonoBehaviour
         bc = GetComponent<BoxCollider2D>();
         bounceSource = GetComponent<AudioSource>();
 
+
     }
 
     // Update is called once per frame
@@ -64,6 +65,18 @@ public class Player : MonoBehaviour
         grounded = false;
     }
 
+    private void OnCollisionEnter2D(Collision2D other)
 
-}
+        {
+            if (other.gameObject.CompareTag("Player"))
+            {
+                Player player = other.transform.root.GetComponentInChildren<Player>();
+                Vector2 colNormal = other.transform.position - transform.position;
+                colNormal.Normalize();
+                player.Pushback(colNormal * pushBackForce);
+                CameraController.ScreenShakeLight();
+        }
+        }
+
+    }
 

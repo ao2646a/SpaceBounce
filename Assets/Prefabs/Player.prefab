@@ -253,7 +253,8 @@ MonoBehaviour:
   lastJumpTime: 0
   grounded: 0
   pushBackForce: 8
-  bounceSource: {fileID: 0}
+  bounceSource: {fileID: -3896218476070902062}
+  playerHit: {fileID: 0}
 --- !u!82 &-3896218476070902062
 AudioSource:
   m_ObjectHideFlags: 0
