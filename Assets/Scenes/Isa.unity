@@ -2429,6 +2429,7 @@ GameObject:
   - component: {fileID: 1505859298}
   - component: {fileID: 1505859297}
   - component: {fileID: 1505859296}
+  - component: {fileID: 1505859299}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2501,6 +2502,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1505859299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1505859295}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8819af3fbda9f4d5c81d3d4dca3eadbf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shakeTimeStandardLight: 0.2
+  strengthStandardLight: 0.2
 --- !u!1 &1554222046
 GameObject:
   m_ObjectHideFlags: 0
@@ -3009,7 +3024,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3859623153991377201, guid: 9fdcaf1c90c7c7a4d9cb7daea93c804b, type: 3}
       propertyPath: secTilGenerate
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 3859623153991377202, guid: 9fdcaf1c90c7c7a4d9cb7daea93c804b, type: 3}
       propertyPath: m_Name
