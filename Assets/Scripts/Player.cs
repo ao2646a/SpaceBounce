@@ -43,19 +43,19 @@ public class Player : MonoBehaviour
 
     public void Jump(InputAction.CallbackContext context)
     {
-        if (context.performed && IsGrounded())
+        if (context.performed)// && IsGrounded())
         {
             bounceSource.Play();
             rb.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
         }
     }
 
-    private bool IsGrounded()
+    /*private bool IsGrounded()
     {
         float extraHeight = .02f;
         RaycastHit2D raycastHit = Physics2D.Raycast(bc.bounds.center, Vector2.down, bc.bounds.extents.y + extraHeight);
         return raycastHit.collider != null;
-    }
+    }*/
 
 
     public void Pushback(Vector2 force)
@@ -79,4 +79,3 @@ public class Player : MonoBehaviour
         }
 
     }
-
