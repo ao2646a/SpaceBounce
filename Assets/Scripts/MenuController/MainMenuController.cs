@@ -13,12 +13,12 @@ public class MainMenuController : MonoBehaviour
 
     public void playLevelTwo()
     {
-        SceneManager.LoadScene("Isa");
+        SceneManager.LoadScene("Ari");
     }
 
     public void playLevelThree()
     {
-        SceneManager.LoadScene("Ari");
+        SceneManager.LoadScene("Isa");
     }
 
     public void exitGame()
