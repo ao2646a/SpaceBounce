@@ -91,7 +91,7 @@ public class Player : MonoBehaviour
         float extraHeight = .02f;
         RaycastHit2D raycastHit = Physics2D.Raycast(bc.bounds.center, Vector2.down, bc.bounds.extents.y + extraHeight);
         return raycastHit.collider != null;
-    }*/
+    }
 
 
     public void Pushback(Vector2 force)
@@ -125,16 +125,17 @@ public class Player : MonoBehaviour
         }
     }
 
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.CompareTag("Player"))
         {
-            if (other.gameObject.CompareTag("Player"))
-            {
-                Player player = other.transform.root.GetComponentInChildren<Player>();
-                Vector2 colNormal = other.transform.position - transform.position;
-                colNormal.Normalize();
-                player.Pushback(colNormal * pushBackForce);
-                CameraController.ScreenShakeLight();
+            Player player = other.transform.root.GetComponentInChildren<Player>();
+            Vector2 colNormal = other.transform.position - transform.position;
+            colNormal.Normalize();
+            player.Pushback(colNormal * pushBackForce);
+            CameraController.ScreenShakeLight();
         }
-        }
-
-
     }
+
+
+}
