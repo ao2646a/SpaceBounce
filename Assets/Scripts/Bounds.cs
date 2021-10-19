@@ -31,7 +31,8 @@ public class Bounds : MonoBehaviour
                 resultText.text = "Player 2 wins!";
                 resultText.enabled = true;
             }
-            else if (other.gameObject.name == "Player 2")
+
+            else if (other.gameObject.name == "Player 2 Variant 1")
             {
                 endGameSource.Play();
                 resultText.text = "Player 1 wins!";
