@@ -231,6 +231,10 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 438db59b-a46c-4920-a86e-b46690ee30fd
     m_ActionName: Player/Jump[/Keyboard/upArrow]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 7ba7199e-7320-4f9e-9bfb-848c857cbb26
+    m_ActionName: Player/Shoot[/Keyboard/rightShift]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -248,13 +252,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d0b6f3750ef9044f94a066554cb897d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 3
+  moveSpeed: 6
   jumpForce: 6
   lastJumpTime: 0
   grounded: 0
   pushBackForce: 8
   bounceSource: {fileID: -3896218476070902062}
-  playerHit: {fileID: 0}
+  shootFloat: 0
+  shootPush: 0
+  timeToShoot: 0
+  leftfRay: {fileID: 0}
+  rightfRay: {fileID: 0}
+  leftpRay: {fileID: 0}
+  rightpRay: {fileID: 0}
 --- !u!82 &-3896218476070902062
 AudioSource:
   m_ObjectHideFlags: 0

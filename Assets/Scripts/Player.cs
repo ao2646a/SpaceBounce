@@ -41,7 +41,7 @@ public class Player : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         rb.AddForce(new Vector2(inputX * moveSpeed, 0));
 
